@@ -1,1 +1,75 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practical Application Activity</title>
+</head>
+<body>
+
+    <h1>HTML Practical Application Activity</h1>
+
+    <!-- ========== 1. Images ========== -->
+    <h2 id="images">1. Images</h2>
+    <figure>
+        <img src="images/Doberman-pinscher-dog.jpg" alt="A Doberman Pinscher dog standing outdoors" width="400">
+        <figcaption>A Doberman Pinscher I photographed.</figcaption>
+    </figure>
+
+    <img src="images/images.jpeg" alt="Description of this image" height="80">
+    <img src="images/images (22).jpeg" alt="Description of this image">
+
+    <!-- ========== 2. Hyperlinks ========== -->
+    <h2 id="hyperlinks">2. Hyperlinks</h2>
+    <!-- Internal link (to another section on the same page) -->
+    <p><a href="#multimedia">Go to Multimedia section</a></p>
+
+    <!-- External link (opens in new tab) -->
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Documentation</a></p>
+
+    <!-- Email link -->
+    <p><a href="mailto:yourname@example.com">Send me an email</a></p>
+
+    <!-- Same-page anchor link (jumps to a specific section) -->
+    <p><a href="#images">Jump back to Images</a></p>
+
+    <!-- ========== 3. Multimedia ========== -->
+    <h2 id="multimedia">3. Multimedia</h2>
+    <audio controls>
+        <source src="media/my-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <video controls width="400">
+        <source src="media/RotatingCoach.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+    <!-- ========== 4. Useful Tags ========== -->
+    <h2 id="useful-tags">4. Useful Tags</h2>
+    <!-- I used blockquote to show a quoted statement clearly -->
+    <blockquote>
+        "HTML is the foundation of every webpage."
+    </blockquote>
+
+    <!-- I used mark to highlight an important term -->
+    <p>The <mark>DOM</mark> is a tree structure of the page.</p>
+
+    <!-- I used code to display HTML syntax -->
+    <p>Use the <code>&lt;img&gt;</code> tag to embed images.</p>
+
+    <!-- ========== 5. HTML DOM ========== -->
+    <h2 id="html-dom">5. HTML DOM</h2>
+    <p>Open this page in DevTools and inspect the elements above to see the DOM tree.</p>
+
+    <!-- Parent-child relationship explanation:
+    The <figure> element is the parent of both the <img> and the <figcaption> that describe my dog photo.
+    The <body> element is the parent of every heading, paragraph, image, and media element on this page.
+    The <audio> and <video> elements are each the parent of their own <source> child, which supplies the file path.
+    Because every element with an id (images, hyperlinks, multimedia, useful-tags, html-dom) is a direct child of <body>,
+    they are siblings of one another while still containing their own nested child elements.
+    -->
+
+</body>
+  </html>
